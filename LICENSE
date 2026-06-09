@@ -1,0 +1,34 @@
+AINPCEngine CLI - End User License Agreement
+
+Copyright (c) 2026 Tyga.Cloud Ltd. All rights reserved.
+
+Permission is granted to install and use this software via npm for its
+intended purpose (interacting with the AINPCEngine platform at ainpcengine.com).
+
+You may NOT:
+- Reverse-engineer, decompile, or disassemble this software
+- Redistribute, sublicense, or resell this software
+- Modify or create derivative works based on this software
+- Remove or alter any copyright notices contained in this software
+
+DISCLAIMER OF WARRANTIES
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+
+LIMITATION OF LIABILITY
+IN NO EVENT SHALL TYGA.CLOUD LTD BE LIABLE FOR ANY INDIRECT, INCIDENTAL,
+SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, OR ANY LOSS OF PROFITS OR
+REVENUE, WHETHER INCURRED DIRECTLY OR INDIRECTLY, OR ANY LOSS OF DATA, USE,
+GOODWILL, OR OTHER INTANGIBLE LOSSES. IN NO EVENT SHALL TYGA.CLOUD LTD'S
+AGGREGATE LIABILITY EXCEED THE AMOUNT YOU PAID TO TYGA.CLOUD LTD IN THE
+TWELVE (12) MONTHS PRECEDING THE CLAIM.
+
+INDEMNIFICATION
+You agree to indemnify, defend, and hold harmless Tyga.Cloud Ltd, its
+officers, directors, employees, and agents from and against any claims,
+liabilities, damages, losses, and expenses (including reasonable legal fees)
+arising from your use of the software, your violation of this licence, or
+your violation of any applicable law.
+
+Full terms of service: https://ainpcengine.com/terms

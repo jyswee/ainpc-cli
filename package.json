@@ -1,0 +1,45 @@
+{
+  "name": "ainpc-cli",
+  "version": "1.0.4",
+  "description": "AINPCEngine CLI - AI-powered NPCs for game studios. Create, talk to, and manage NPCs from the command line. Built for coding agents.",
+  "bin": {
+    "ainpc": "bin/cli.js"
+  },
+  "scripts": {
+    "build": "node scripts/build.js",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "ainpcengine",
+    "npc",
+    "ai",
+    "gamedev",
+    "rpg",
+    "dialogue",
+    "agent",
+    "cli",
+    "coding-agent",
+    "ai-agent",
+    "claude",
+    "cursor",
+    "cline",
+    "windsurf",
+    "aider",
+    "codex",
+    "unity",
+    "unreal",
+    "godot",
+    "rust",
+    "game-engine"
+  ],
+  "author": "Joe Wee <joe@tyga.cloud>",
+  "license": "SEE LICENSE IN LICENSE",
+  "homepage": "https://ainpcengine.com",
+  "repository": {
+    "type": "git",
+    "url": "https://ainpcengine.com"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
