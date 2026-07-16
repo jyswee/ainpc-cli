@@ -1,0 +1,58 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-09-29/server.schema.json",
+  "name": "io.github.jyswee/ainpc-cli",
+  "description": "AI NPCs with persistent memory for game studios. 49 tools: NPC CRUD, dialogue, events, persona generation. Stdio or remote SSE.",
+  "repository": {
+    "url": "https://github.com/jyswee/ainpc-cli",
+    "source": "github"
+  },
+  "version": "1.5.0",
+  "websiteUrl": "https://ainpcengine.com",
+  "packages": [
+    {
+      "registryType": "npm",
+      "registryBaseUrl": "https://registry.npmjs.org",
+      "identifier": "ainpc-cli",
+      "version": "1.5.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "runtimeHint": "npx",
+      "runtimeArguments": [
+        {
+          "type": "positional",
+          "value": "mcp-serve",
+          "isRequired": true
+        }
+      ],
+      "environmentVariables": [
+        {
+          "name": "AINPC_API_KEY",
+          "description": "AINPCEngine API key (npk_...). Get one with `ainpc signup` — 7-day free trial.",
+          "isRequired": true,
+          "isSecret": true
+        },
+        {
+          "name": "AINPC_GAME_ID",
+          "description": "Game slug to scope NPC tools to.",
+          "isRequired": false,
+          "isSecret": false
+        }
+      ]
+    }
+  ],
+  "remotes": [
+    {
+      "type": "sse",
+      "url": "https://mcp.ainpcengine.com/sse",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Bearer token using your AINPCEngine API key: 'Bearer npk_...'. Optional: without one the server starts in onboarding mode and can self-signup via the ainpc_signup tool.",
+          "isRequired": false,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}

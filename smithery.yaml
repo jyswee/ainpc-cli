@@ -1,0 +1,14 @@
+startCommand:
+  type: stdio
+  configSchema:
+    type: object
+    required: [apiKey]
+    properties:
+      apiKey:
+        type: string
+        description: AINPCEngine API key (npk_...). Get one with `ainpc signup` or at https://ainpcengine.com — 7-day free trial.
+      gameId:
+        type: string
+        description: Optional game slug to scope NPC tools to (can also be set later per call).
+  commandFunction: |-
+    (config) => ({ command: "ainpc", args: ["mcp-serve"], env: { AINPC_API_KEY: config.apiKey, ...(config.gameId ? { AINPC_GAME_ID: config.gameId } : {}) } })

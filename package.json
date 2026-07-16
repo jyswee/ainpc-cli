@@ -1,7 +1,7 @@
 {
   "name": "ainpc-cli",
-  "version": "1.0.4",
-  "description": "AINPCEngine CLI - AI-powered NPCs for game studios. Create, talk to, and manage NPCs from the command line. Built for coding agents.",
+  "version": "1.5.0",
+  "description": "AINPCEngine CLI + MCP server (49 tools) - AI-powered NPCs for game studios. Create, talk to, and manage NPCs from the command line. Built for coding agents.",
   "bin": {
     "ainpc": "bin/cli.js"
   },
@@ -30,14 +30,17 @@
     "unreal",
     "godot",
     "rust",
-    "game-engine"
+    "game-engine",
+    "mcp",
+    "mcp-server",
+    "modelcontextprotocol"
   ],
-  "author": "Joe Wee <joe@tyga.cloud>",
+  "author": "Joe Wee <joe@ainpcengine.com>",
   "license": "SEE LICENSE IN LICENSE",
   "homepage": "https://ainpcengine.com",
   "repository": {
     "type": "git",
-    "url": "https://ainpcengine.com"
+    "url": "https://github.com/jyswee/ainpc-cli"
   },
   "engines": {
     "node": ">=18"

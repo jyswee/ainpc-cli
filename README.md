@@ -10,9 +10,11 @@ npm install -g ainpc-cli
 
 ## Get Your API Key
 
-1. Sign up at https://ainpcengine.com/auth/register ($1 one-time verification)
-2. Go to Studio Dashboard > API Keys
-3. Generate a key and create a game
+```bash
+ainpc signup "My Studio" --email you@studio.com --password ********
+```
+
+Creates your studio and auto-saves an `npk_` API key. Then log in at https://ainpcengine.com and add a card to start the **7-day free trial** ($0 today, plans from $29/mo). Or sign up at https://ainpcengine.com/auth/register and generate a key in Studio Dashboard → API Keys.
 
 ## Quick Start
 
@@ -55,6 +57,27 @@ Use the ainpc CLI for NPC management.
 Config auto-loaded from .ainpc/config.json or AINPC_API_KEY env.
 Run ainpc --help for full reference.
 ```
+
+## MCP Server
+
+49 tools for AI agents: NPC CRUD, dialogue, game events, persona generation, studio account, usage and billing.
+
+**Local (stdio):**
+
+```json
+{ "mcpServers": { "ainpcengine": { "type": "stdio", "command": "ainpc", "args": ["mcp-serve"] } } }
+```
+
+Requires `npm install -g ainpc-cli` + `ainpc login --key npk_YOUR_KEY --game my-rpg` (or `AINPC_API_KEY` env).
+
+**Remote (SSE, zero install)** — for Claude Web and other web-based agents:
+
+```json
+{ "mcpServers": { "ainpcengine": { "type": "sse", "url": "https://mcp.ainpcengine.com/sse",
+  "headers": { "Authorization": "Bearer npk_YOUR_API_KEY" } } } }
+```
+
+No key yet? Connect keyless — the remote server starts in onboarding mode and an agent can self-signup via the `ainpc_signup` tool.
 
 ## Commands
 
