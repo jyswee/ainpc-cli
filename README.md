@@ -17,6 +17,10 @@ NPCs that remember players across sessions, react to game events, and stay in ch
   <a href="https://ainpcengine.com/pricing">Pricing</a>
 </p>
 
+<p align="center">
+  <a href="https://smithery.ai/servers/jyswee/ainpcengine"><img src="https://smithery.ai/badge/jyswee/ainpcengine" alt="smithery badge"></a>
+</p>
+
 ---
 
 ## Meet the NPCs
