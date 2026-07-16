@@ -1,6 +1,6 @@
 {
   "name": "ainpc-cli",
-  "version": "1.5.1",
+  "version": "1.5.3",
   "mcpName": "io.github.jyswee/ainpc-cli",
   "description": "AINPCEngine CLI - AI-powered NPCs for game studios. Create, talk to, and manage NPCs from the command line. Built for coding agents.",
   "bin": {
