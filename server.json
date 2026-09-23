@@ -43,6 +43,18 @@
   ],
   "remotes": [
     {
+      "type": "streamable-http",
+      "url": "https://mcp.ainpcengine.com/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Bearer token using your AINPCEngine API key: 'Bearer npk_...'. Optional: without one the server starts in onboarding mode and can self-signup via the ainpc_signup tool.",
+          "isRequired": false,
+          "isSecret": true
+        }
+      ]
+    },
+    {
       "type": "sse",
       "url": "https://mcp.ainpcengine.com/sse",
       "headers": [
